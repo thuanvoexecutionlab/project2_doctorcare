@@ -16,3 +16,21 @@ export const DMSansNav = {
         fontSize: "16px",
     }
 }
+
+export const DMSansHeatText = {
+    fontFamily: "'DM Sans', sans- serif",
+    fontWeight: 700,
+    fontSize: "14px",
+}
+
+export const DMSansHero = {
+    fontFamily: "'DM Sans', sans- serif",
+    fontWeight: 700,
+    fontSize: "52px",
+}
+
+export const DMSansSubtitle = {
+    fontFamily: "'DM Sans', sans- serif",
+    fontWeight: 400,
+    fontSize: "18px",
+}

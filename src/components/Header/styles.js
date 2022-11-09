@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { primaryColors, secondaryColors } from "../../constants/colors"
+import { primaryColors } from "../../constants/colors"
 import { DMSansNav } from "../../constants/typography"
 
 export const Wrapper = styled.header`

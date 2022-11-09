@@ -21,3 +21,12 @@ export const Button = styled.div`
         background-color: ${props => props.offset > 0 ? secondaryColors.white : primaryColors.brandGreen};
         color: ${props => props.offset > 0 ? primaryColors.brandGreen : secondaryColors.white};
 `
+
+export const ButtonIcon = (props) => {
+    const { icon } = props
+    return (
+        <Button>
+
+        </Button>
+    )
+}
