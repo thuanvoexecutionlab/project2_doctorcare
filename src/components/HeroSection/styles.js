@@ -19,7 +19,7 @@ export const InnerWrapper = styled.div`
     justify-content: center;
     width: 80%;
     margin: 0 auto;
-    gap: 60px;
+    gap: 65px;
 `
 export const Content = styled.div`
     display: flex;
@@ -31,7 +31,7 @@ export const Wrap = styled.div`
     flex: 3;
 `
 export const Image = styled.img`
-    width: 85%;
+    width: 90%;
 `
 export const Subtitle = styled.h2`
     font-size: ${DMSansSubtitle.fontSize};
