@@ -12,6 +12,7 @@ export const Wrapper = styled.header`
     left: 0;
     background-color: ${props => props.offset > 0 ? primaryColors.brandGreen : "transparent"};
     transition: all 0.2s ease-in-out;
+    z-index: 100;
 `
 export const InnerWrapper = styled.div`
     display: flex;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { primaryColors, secondaryColors } from '../../constants/colors'
 import { DMSansButton } from '../../constants/typography'
 
@@ -20,13 +20,20 @@ export const Button = styled.div`
     &:hover {
         background-color: ${props => props.offset > 0 ? secondaryColors.white : primaryColors.brandGreen};
         color: ${props => props.offset > 0 ? primaryColors.brandGreen : secondaryColors.white};
+    }
+    ${props => props.primary && css`
+        background-color: ${primaryColors.brandGreen};
+        color: ${secondaryColors.white};
+        padding: 16px 32px;
+        gap: 18px;
+        &:hover {
+            background-color: ${primaryColors.brandGreenHover};
+        }
+    `}
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
 `
 
-export const ButtonIcon = (props) => {
-    const { icon } = props
-    return (
-        <Button>
 
-        </Button>
-    )
-}

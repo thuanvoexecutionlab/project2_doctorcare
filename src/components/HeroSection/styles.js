@@ -23,9 +23,8 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
 `
-
-export const WrapImg = styled.div`
-    width: 75%;
+export const Wrap = styled.div`
+    display: flex;
 `
 export const Image = styled.img`
     width: 100%;
@@ -46,3 +45,36 @@ export const Subtitle = styled.h2`
     margin: 0;
     margin-bottom: 32px;
 `
+export const DivNumber = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: ${props => (-props.bottom / 2) + "px"};
+    gap: 100px;
+    background-color: ${primaryColors.brandBeige};
+    border: 1px solid ${primaryColors.brandGreenLight};
+    padding: 60px 120px;
+    border-radius: 6px;
+`
+export const ContentNumber = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+`
+export const Number = styled.h3`
+    font-size: 48px;
+    font-family: ${DMSansHero.fontFamily};
+    font-weight: ${DMSansHero.fontWeight};
+    color: ${secondaryColors.grayHeadline};
+    margin: 0;
+`
+
+export const Divider = styled.div`
+    width: 1px;
+    background-color: ${primaryColors.brandGreen};
+    height: 100px;
+`
+

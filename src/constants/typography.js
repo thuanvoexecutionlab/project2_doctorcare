@@ -34,3 +34,9 @@ export const DMSansSubtitle = {
     fontWeight: 400,
     fontSize: "18px",
 }
+
+export const DMSansText = {
+    fontFamily: "'DM Sans', sans- serif",
+    fontWeight: 400,
+    fontSize: "16px",
+}

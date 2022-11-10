@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { Button } from '../Button'
 import { HeatText } from '../HeatText'
-import { Content, HeroTitle, Image, InnerWrapper, Subtitle, WrapImg, Wrapper } from './styles'
+import { BsWhatsapp } from 'react-icons/bs'
+import { Content, ContentNumber, Divider, DivNumber, HeroTitle, Image, InnerWrapper, Number, Subtitle, Wrap, Wrapper} from './styles'
+import { Text } from '../Text'
 
 export default function HeroSection() {
+    const [height, setHeight] = useState(0);
+    const elementRef = useRef(null);
+
+    useEffect(() => {
+        setHeight(elementRef.current.clientHeight);
+    }, []); 
+
+    console.log(height);
+
     return (
         <Wrapper>
             <InnerWrapper>
@@ -14,11 +26,33 @@ export default function HeroSection() {
                         de sua doença e proporcionar uma cura a
                         longo prazo.
                     </Subtitle>
+                    <Wrap>
+                        <Button primary >
+                            <BsWhatsapp className={"icon"} />
+                            <span>Agende sua consulta</span>
+                        </Button>
+                    </Wrap>
                 </Content>
-                <WrapImg>
+                <Wrap>
                     <Image src="./images/customer1.png" alt="hero" />
-                </WrapImg>
+                </Wrap>
             </InnerWrapper>
+            <DivNumber ref={elementRef} bottom={height}>
+                <ContentNumber>
+                    <Number>+3.500</Number>
+                    <Text primary>Pacientes atendidos</Text>
+                </ContentNumber>
+                <Divider />
+                <ContentNumber>
+                    <Number>+15</Number>
+                    <Text>Especialistas disponíveis</Text>
+                </ContentNumber>
+                <Divider />
+                <ContentNumber>
+                    <Number>+10</Number>
+                    <Text>Anos no mercado</Text>
+                </ContentNumber>
+            </DivNumber>
         </Wrapper>
     )
 }
