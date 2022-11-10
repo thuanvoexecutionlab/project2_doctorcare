@@ -9,7 +9,9 @@ export const Wrapper = styled.div`
     justify-content: center;
     width: 100%;
     padding-top: 10vh;
+    padding-bottom: 10vh;
     background-color: ${primaryColors.brandGreenLight};
+    position: relative;
 `
 export const InnerWrapper = styled.div`
     display: flex;
@@ -21,21 +23,15 @@ export const InnerWrapper = styled.div`
 `
 export const Content = styled.div`
     display: flex;
+    flex: 4;
     flex-direction: column;
 `
 export const Wrap = styled.div`
     display: flex;
+    flex: 3;
 `
 export const Image = styled.img`
-    width: 100%;
-`
-export const HeroTitle = styled.h1`
-    font-size: ${DMSansHero.fontSize};
-    font-family: ${DMSansHero.fontFamily};
-    font-weight: ${DMSansHero.fontWeight};
-    color: ${secondaryColors.grayHeadline};
-    margin: 0;
-    margin-bottom: 24px;
+    width: 85%;
 `
 export const Subtitle = styled.h2`
     font-size: ${DMSansSubtitle.fontSize};
@@ -54,7 +50,8 @@ export const DivNumber = styled.div`
     gap: 100px;
     background-color: ${primaryColors.brandBeige};
     border: 1px solid ${primaryColors.brandGreenLight};
-    padding: 60px 120px;
+    padding: 60px 0;
+    width: 80%;
     border-radius: 6px;
 `
 export const ContentNumber = styled.div`

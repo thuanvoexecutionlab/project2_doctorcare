@@ -8,5 +8,6 @@ export const HeatText = styled.h3`
     font-weight: ${DMSansHeatText.fontWeight};
     color: ${primaryColors.brandGreen};
     margin: 0;
-    margin-bottom: ${props => props.mb? props.mb : "0"};
+    margin-bottom: ${props => props.mb ? props.mb + "px" : "0"};
+    text-transform: uppercase;
 `

@@ -9,5 +9,5 @@ export const primaryColors = {
 export const secondaryColors = {
     grayHeadline: '#212529',
     grayParagraph: '#495057',
-    white: '#EDEDED',
+    white: '#FFFFFF',
 }

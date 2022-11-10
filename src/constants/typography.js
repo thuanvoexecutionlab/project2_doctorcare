@@ -40,3 +40,15 @@ export const DMSansText = {
     fontWeight: 400,
     fontSize: "16px",
 }
+
+export const DMSansHeading1 = {
+    fontFamily: "'DM Sans', sans- serif",   
+    fontWeight: 700,
+    fontSize: "40px",
+}
+
+export const DMSansHeading2 = {
+    fontFamily: "'DM Sans', sans- serif",
+    fontWeight: 700,
+    fontSize: "24px",
+}
