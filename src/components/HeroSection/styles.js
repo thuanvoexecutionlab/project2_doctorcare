@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { primaryColors, secondaryColors } from "../../constants/colors";
 import { DMSansHero, DMSansSubtitle } from "../../constants/typography";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;

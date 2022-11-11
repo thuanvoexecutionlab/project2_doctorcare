@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { secondaryColors } from "../../constants/colors";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;

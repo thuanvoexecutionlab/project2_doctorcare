@@ -10,17 +10,18 @@ import { Provider } from './provider';
 
 function App() {
   return (
-    <Provider>
-      <div className="App">
-        <Drawer />
-        <Header />
-        <HeroSection />
-        <ServiceSection />
-        <AboutUsSection />
-        <ContactSection />
-        <Footer />
-      </div>
-    </Provider>
+    
+      <Provider>
+        <div className="App">
+          <Drawer />
+          <Header />
+          <HeroSection />
+          <ServiceSection />
+          <AboutUsSection />
+          <ContactSection />
+          <Footer />
+        </div>
+      </Provider>
   );
 }
 

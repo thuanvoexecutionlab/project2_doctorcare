@@ -54,7 +54,7 @@ export const MenuItem = styled.li`
     padding-bottom: .5rem;
     border-bottom: 2px solid transparent;
     transition: all 0.2s ease-in-out;
-        &:hover {
+        &:hover, &.active {
             font-size: 24px;
             font-family: ${DMSansNav.active.fontFamily};
             font-weight: ${DMSansNav.active.fontWeight};

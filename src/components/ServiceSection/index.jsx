@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BsCheck2 } from 'react-icons/bs'
 import { listService } from '../../mock/list_service'
 import { Heading } from '../Heading'
@@ -7,9 +7,11 @@ import { Text } from '../Text'
 import { Card, Grid, InnerWrapper, Wrapper } from './styles'
 
 export default function ServiceSection() {
-
+    useEffect(() => {
+        
+    }, [])
     return (
-        <Wrapper>
+        <Wrapper id={"services"}>
             <InnerWrapper>
                 <HeatText mb={16}>Serviços</HeatText>
                 <Heading className={"h1"} width={40} align={"center"} mb={64}>

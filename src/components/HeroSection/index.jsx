@@ -15,7 +15,7 @@ export default function HeroSection() {
     }, []); 
 
     return (
-        <Wrapper>
+        <Wrapper id={"home"}>
             <InnerWrapper>
                 <Content>
                     <HeatText mb={16}>BOAS-VINDAS A DOCTORCARE 👋</HeatText>

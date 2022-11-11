@@ -10,7 +10,7 @@ import { Heading } from '../Heading'
 export default function ContactSection() {
     
     return (
-        <Wrapper>
+        <Wrapper id={"depositions"}>
             <InnerWrapper>
                 <Content>
                     <Heading mb={40} className={"h1"} width={65} align={"left"}>Entre em contato com a gente!</Heading>

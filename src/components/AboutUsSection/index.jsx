@@ -8,7 +8,7 @@ import { Heading } from '../Heading'
 export default function AboutUsSection() {
 
     return (
-        <Wrapper>
+        <Wrapper id={"about"}>
             <InnerWrapper>
                 <Wrap>
                     <Image src="./images/customer2.png" alt="hero" />
