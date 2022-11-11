@@ -27,14 +27,16 @@ export default function Drawer() {
                 </Logo>
                 <Menu>
                     <HashLink onClick={() => handleClick()} smooth to="#home">
-                        <MenuItem id='menuHome'>Início</MenuItem>
+                        <MenuItem id='menuHomeMobile'>Início</MenuItem>
                     </HashLink>
                     <HashLink onClick={() => handleClick()} smooth to="#about">
-                        <MenuItem id='menuAbout'>Sobre</MenuItem>
+                        <MenuItem id='menuAboutMobile'>Sobre</MenuItem>
                     </HashLink>
-                    <HashLink onClick={() => handleClick()} smooth to="#services"><MenuItem id='menuServices'>Serviços</MenuItem></HashLink>
+                    <HashLink onClick={() => handleClick()} smooth to="#services">
+                        <MenuItem id='menuServicesMobile'>Serviços</MenuItem>
+                    </HashLink>
                     <HashLink onClick={() => handleClick()} smooth to="#depositions">
-                        <MenuItem id='menuDepositions'>Depoimentos</MenuItem>
+                        <MenuItem id='menuDepositionsMobile'>Depoimentos</MenuItem>
                     </HashLink>
 
                 </Menu>

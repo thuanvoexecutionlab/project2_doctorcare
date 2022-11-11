@@ -16,17 +16,20 @@ export default function Header() {
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
         window.addEventListener('scroll', () => {
-                const scroll = window.scrollY
-                const element = document.getElementById('services')
-                const elementOffset = element.offsetTop
-                const elementHeight = element.offsetHeight
-                const elementOffsetTop = elementOffset + elementHeight
-                const menu = document.getElementById('menuServices')
-                if (scroll > elementOffset && scroll < elementOffsetTop) {
-                    menu.classList.add('active')
-                } else {
-                    menu.classList.remove('active')
-                }
+            const scroll = window.scrollY
+            const element = document.getElementById('services')
+            const elementOffset = element.offsetTop
+            const elementHeight = element.offsetHeight
+            const elementOffsetTop = elementOffset + elementHeight
+            const menu = document.getElementById('menuServices')
+            const menuMobile = document.getElementById('menuServicesMobile')
+            if (scroll > elementOffset && scroll < elementOffsetTop) {
+                menu.classList.add('active')
+                menuMobile.classList.add('active')
+            } else {
+                menu.classList.remove('active')
+                menuMobile.classList.remove('active')
+            }
         })
         window.addEventListener('scroll', () => {
             const scroll = window.scrollY
@@ -35,10 +38,13 @@ export default function Header() {
             const elementHeight = element.offsetHeight
             const elementOffsetTop = elementOffset + elementHeight
             const menu = document.getElementById('menuHome')
+            const menuMobile = document.getElementById('menuHomeMobile')
             if (scroll > elementOffset && scroll < elementOffsetTop) {
                 menu.classList.add('active')
+                menuMobile.classList.add('active')
             } else {
                 menu.classList.remove('active')
+                menuMobile.classList.remove('active')
             }
         })
         window.addEventListener('scroll', () => {
@@ -48,10 +54,13 @@ export default function Header() {
             const elementHeight = element.offsetHeight
             const elementOffsetTop = elementOffset + elementHeight
             const menu = document.getElementById('menuAbout')
+            const menuMobile = document.getElementById('menuAboutMobile')
             if (scroll > elementOffset && scroll < elementOffsetTop) {
                 menu.classList.add('active')
+                menuMobile.classList.add('active')
             } else {
                 menu.classList.remove('active')
+                menuMobile.classList.remove('active')
             }
         })
         window.addEventListener('scroll', () => {
@@ -61,10 +70,13 @@ export default function Header() {
             const elementHeight = element.offsetHeight
             const elementOffsetTop = elementOffset + elementHeight
             const menu = document.getElementById('menuDepositions')
+            const menuMobile = document.getElementById('menuDepositionsMobile')
             if (scroll > elementOffset && scroll < elementOffsetTop) {
                 menu.classList.add('active')
+                menuMobile.classList.add('active')
             } else {
                 menu.classList.remove('active')
+                menuMobile.classList.remove('active')
             }
         })
         return () => window.removeEventListener('scroll', onScroll);
