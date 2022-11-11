@@ -15,7 +15,7 @@ export default function AboutUsSection() {
                 </Wrap>
                 <Content>
                     <HeatText mb={10}>SOBRE NÓS</HeatText>
-                    <Heading mb={24} className={"h1"} width={65}>Entenda quem somos e por que existimos</Heading>
+                    <Heading mb={24} className={"h1"} width={65} align={"left"}>Entenda quem somos e por que existimos</Heading>
                     <Text>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.

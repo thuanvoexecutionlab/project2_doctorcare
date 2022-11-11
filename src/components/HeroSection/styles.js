@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 15vh;
     padding-bottom: 10vh;
     background-color: ${primaryColors.brandGreenLight};
     position: relative;
@@ -20,6 +20,11 @@ export const InnerWrapper = styled.div`
     width: 80%;
     margin: 0 auto;
     gap: 65px;
+    @media (max-width: 1200px) {
+        gap: 10vh;
+        width: 90%;
+        flex-direction: column;
+    }
 `
 export const Content = styled.div`
     display: flex;
@@ -29,9 +34,17 @@ export const Content = styled.div`
 export const Wrap = styled.div`
     display: flex;
     flex: 3;
+    padding-right: 24px;
+    @media (max-width: 1200px) {
+        padding-right: 0;
+        justify-content: center;
+    }
 `
 export const Image = styled.img`
-    width: 90%;
+    width: 100%;
+     @media (max-width: 1200px) {
+        padding-bottom: 18vh;
+    }
 `
 export const Subtitle = styled.h2`
     font-size: ${DMSansSubtitle.fontSize};
@@ -40,6 +53,9 @@ export const Subtitle = styled.h2`
     color: ${secondaryColors.grayParagraph};
     margin: 0;
     margin-bottom: 32px;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
 `
 export const DivNumber = styled.div`
     display: flex;
@@ -53,6 +69,12 @@ export const DivNumber = styled.div`
     padding: 60px 0;
     width: 80%;
     border-radius: 6px;
+    @media (max-width: 1200px) {
+        width: 90%;
+        flex-direction: column;
+        gap: 60px;
+        padding: 40px 0;
+    }
 `
 export const ContentNumber = styled.div`
     display: flex;
@@ -73,5 +95,8 @@ export const Divider = styled.div`
     width: 1px;
     background-color: ${primaryColors.brandGreen};
     height: 100px;
+    @media (max-width: 1200px) {
+        display: none;
+    }
 `
 

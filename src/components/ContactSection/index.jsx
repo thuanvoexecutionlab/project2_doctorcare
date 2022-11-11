@@ -13,7 +13,7 @@ export default function ContactSection() {
         <Wrapper>
             <InnerWrapper>
                 <Content>
-                    <Heading mb={40} className={"h1"} width={65}>Entre em contato com a gente!</Heading>
+                    <Heading mb={40} className={"h1"} width={65} align={"left"}>Entre em contato com a gente!</Heading>
                     <Text mb={16}>
                         <FiMapPin className='icon'/>
                         <span>R. Amauri Souza, 346 </span>

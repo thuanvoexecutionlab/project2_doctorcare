@@ -17,6 +17,7 @@ export const Button = styled.div`
     text-transform: uppercase;
     color: ${props => props.offset > 0 ? secondaryColors.white : primaryColors.brandGreen};
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
     &:hover {
         background-color: ${props => props.offset > 0 ? secondaryColors.white : primaryColors.brandGreen};
         color: ${props => props.offset > 0 ? primaryColors.brandGreen : secondaryColors.white};
@@ -25,7 +26,15 @@ export const Button = styled.div`
         background-color: ${primaryColors.brandGreen};
         color: ${secondaryColors.white};
         padding: 16px 32px;
-        gap: 18px;
+        &:hover {
+            background-color: ${primaryColors.brandGreenHover};
+        }
+    `}
+    ${props => props.secondary && css`
+        background-color: ${secondaryColors.white};
+        color: ${primaryColors.brandGreen};
+        padding: 16px 32px;
+        font-size: 18px;
         &:hover {
             background-color: ${primaryColors.brandGreenHover};
         }
@@ -33,6 +42,9 @@ export const Button = styled.div`
     .icon {
         width: 16px;
         height: 16px;
+    }
+    @media (max-width: 1024px) {
+        display: ${props => props.desktop ? "none" : "flex"};
     }
 `
 

@@ -10,4 +10,7 @@ export const HeatText = styled.h3`
     margin: 0;
     margin-bottom: ${props => props.mb ? props.mb + "px" : "0"};
     text-transform: uppercase;
+    @media (max-width: 1200px) {
+        text-align: ${props => props.align ? props.align : "center"};
+    }
 `

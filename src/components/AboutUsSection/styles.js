@@ -17,6 +17,12 @@ export const InnerWrapper = styled.div`
     width: 80%;
     margin: 0 auto;
     gap: 65px;
+    padding: 10vh 0;
+    @media (max-width: 1200px) {
+        gap: 10vh;
+        width: 90%;
+        flex-direction: column-reverse;
+    }
 `
 export const Content = styled.div`
     display: flex;

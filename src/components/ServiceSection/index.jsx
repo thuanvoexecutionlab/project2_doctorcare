@@ -19,7 +19,7 @@ export default function ServiceSection() {
                     {listService.map((item, index) => (
                         <Card key={index}>
                             <BsCheck2 className='icon'/>
-                            <Heading className={"h2"}>{item.title}</Heading>
+                            <Heading className={"h2"} align={"left"}>{item.title}</Heading>
                             <Text>{item.description}</Text>
                         </Card>
                     ))}

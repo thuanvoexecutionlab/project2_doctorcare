@@ -10,6 +10,9 @@ export const Heading = styled.h1`
             font-size: ${DMSansHero.fontSize};
             font-family: ${DMSansHero.fontFamily};
             font-weight: ${DMSansHero.fontWeight};
+            @media (max-width: 1200px) {
+                font-size: 34px;
+            }
         }
         &.h1 {
             font-size: ${DMSansHeading1.fontSize};
@@ -21,4 +24,8 @@ export const Heading = styled.h1`
             font-family: ${DMSansHeading2.fontFamily};
             font-weight: ${DMSansHeading2.fontWeight};
         }
+    @media (max-width: 1200px) {
+        text-align: ${props => props.align ? props.align : "center"};
+        width: 100%;
+    }
 `

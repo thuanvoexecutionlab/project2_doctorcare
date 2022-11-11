@@ -1,9 +1,7 @@
 import React from 'react'
 
-import { HeatText } from '../HeatText'
 import { Content, Image, InnerWrapper, Wrap, Wrapper } from './styles'
 import { Text } from '../Text'
-import { Heading } from '../Heading'
 import { FiFacebook, FiInstagram, FiYoutube } from 'react-icons/fi'
 
 export default function Footer() {

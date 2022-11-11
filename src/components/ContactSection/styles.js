@@ -7,9 +7,12 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh;  
     background-color: ${secondaryColors.white};
     position: relative;
+    @media (max-width: 1200px) {
+        padding: 18vh 0;
+    }
 `
 export const InnerWrapper = styled.div`
     display: flex;
@@ -18,6 +21,11 @@ export const InnerWrapper = styled.div`
     width: 80%;
     margin: 0 auto;
     gap: 65px;
+    @media (max-width: 1200px) {
+        gap: 10vh;
+        width: 90%;
+        flex-direction: column;
+    }
 `
 export const Content = styled.div`
     display: flex;
